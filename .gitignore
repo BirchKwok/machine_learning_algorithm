@@ -1,4 +1,4 @@
-# Byte-compiled / optimized / DLL files
+git@github.com:BirchKwok/machine_learning_algorithm.git# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -67,6 +67,10 @@ instance/
 
 # Scrapy stuff:
 .scrapy
+
+.idea/
+.idea
+
 
 # Sphinx documentation
 docs/_build/
