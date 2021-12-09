@@ -38,7 +38,6 @@ class NaivePerceptron:
                 if dis >= 0:
                     self.weight, self.bias = self.gradient_descent(self.weight, self.bias,
                                                                    x_i, y_i, lr=learning_rate)
-                    wrong_sample = 1
                     break
                 wrong_sample = 0
             continue
@@ -84,7 +83,6 @@ class Perceptron:
                 if (y[i] * (np.dot(alpha * y, gram[i]) + self.bias)) <= 0:
                     alpha[i] += learning_rate
                     self.bias += learning_rate * y[i]
-                    wrong_sample = 1
                     break
                 wrong_sample = 0
 
